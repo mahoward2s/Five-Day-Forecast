@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>5 Day Forecast</title>
+</head>
+
+<body>
+    <!--NavBar-->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid justify-content-center">
+                <a class="navbar-brand" href="#">5 Day Forecast Dashboard</a>
+            </div>
+        </nav>
+    </div>
+    <!--Body Of Dashboard-->
+    <div class="container">
+        <!--Row 1-->
+        <div class="row">
+            <!--Column 1(where search and results will be stored)-->
+            <div class="col-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="disabledTextInput" class="form-label">Search For A City:</label>
+                        <input type="text" id="search_input" class="form-control" placeholder="">
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="fa fa-search"></span> Search </button>
+                </form>
+            </div>
+            <!--Where Current Search Results Display-->
+            <div class="col-8">
+                <!--Row 1 (Current City and results)-->
+                <div class="row">
+
+                </div>
+                <!--Row 2 (Where 5 day forecast will display)-->
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src=script.js></script>
+</body>
+
+</html>

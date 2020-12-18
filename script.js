@@ -1,3 +1,9 @@
+
+
+
+
+
+
 // Event listener for all button elements
 $("button").on("click", function () {
 
@@ -18,8 +24,16 @@ $("button").on("click", function () {
         .then(function (response) {
             console.log()
 
+            var city = response.name;
+            var icon = $("<img>");
+            icon.attr("src", response.weather[0].icon);
+            var temp = $(".temperature").append("Temperature: " + response.main.temp);
+            var humidity = $(".humidity").append("Humidity: " + response.main.humidity);
+            var windspeed = $(".windspeed").append("Windspeed: " + response.wind.speed);
 
-            // Storing an array of results in the results variable
+
+
+            /*// Storing an array of results in the results variable
             var results = response.data;
 
             // Looping over every result item
@@ -50,6 +64,6 @@ $("button").on("click", function () {
                     // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
                     $("#gifs-appear-here").prepend(gifDiv);
                 }
-            }
+            }*/
         });
 });

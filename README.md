@@ -7,4 +7,11 @@
 
 <!--Screen Capture Of Site-->
 
-<!-- Sources -->
+<!-- Sources: 
+
+    YouTube Tutorials
+    developer.mozilla.org
+    overstack
+    github tutorials
+    office hours
+     -->

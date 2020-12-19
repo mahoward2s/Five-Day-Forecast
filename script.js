@@ -1,7 +1,27 @@
+//Declare a variable to store the searched city
+var city="";
+// variable declaration
+var searchCity = $("#search-city");
+var searchButton = $("#search-button");
+var clearButton = $("#clear-history");
+var currentCity = $("#current-city");
+var currentTemperature = $("#temperature");
+var currentHumidty= $("#humidity");
+var currentWSpeed=$("#wind-speed");
+var currentUvindex= $("#uv-index");
+var sCity=[];
 
+//creating a url to get the weath for the city
+var queryURL = "api.openweathermap.org/data/2.5/weather?q=" +
+city + "&APPID=1d0143092f3f763a0d0b8e245be4f7b4";
+//ajax to retrieve the informaton
+$.ajax({
+    url: queryURL,
+    method: "GET"
+})
 
-
-
+.then(function (response) {
+    console.log()
 
 
 // Event listener for all button elements
